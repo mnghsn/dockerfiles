@@ -1,0 +1,15 @@
+language: generic
+sudo: required
+services:
+  - docker
+script:
+  - docker build -t jmlntw/ubuntu-mirror:xenial ubuntu-mirror/xenial/.
+  - docker build -t jmlntw/ubuntu-mirror:bionic ubuntu-mirror/bionic/.
+  - docker build -t jmlntw/ubuntu-taiwanize:xenial ubuntu-taiwanize/xenial/.
+  - docker build -t jmlntw/ubuntu-taiwanize:bionic ubuntu-taiwanize/bionic/.
+  - docker build -t jmlntw/eclint:latest eclint/.
+  - docker build -t jmlntw/clasp:latest clasp/.
+notifications:
+  email:
+    on_success: never
+    on_failure: change
