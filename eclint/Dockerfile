@@ -7,3 +7,4 @@ WORKDIR /usr/src/app
 VOLUME /usr/src/app
 
 ENTRYPOINT ["eclint"]
+CMD ["--help"]
