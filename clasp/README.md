@@ -1,4 +1,4 @@
-# clasp Docker
+# clasp Docker Image
 
 A Docker image to run [**clasp**](https://github.com/google/clasp), a [Google Apps Script](https://developers.google.com/apps-script/) command line development tool.
 
