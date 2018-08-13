@@ -1,6 +1,6 @@
 # github-backup Docker Image
 
-A Docker image to run [**github-backp**](https://github.com/josegonzalez/python-github-backup).
+A Docker image to run [**github-backup**](https://github.com/josegonzalez/python-github-backup).
 
 ## Usage
 

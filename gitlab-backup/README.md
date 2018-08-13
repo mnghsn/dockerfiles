@@ -1,6 +1,6 @@
 # gitlab-backup Docker Image
 
-A Docker image to run [**gitlab-backp**](https://github.com/josegonzalez/python-gitlab-backup).
+A Docker image to run [**gitlab-backup**](https://github.com/josegonzalez/python-gitlab-backup).
 
 ## Usage
 
