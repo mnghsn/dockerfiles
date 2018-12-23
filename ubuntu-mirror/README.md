@@ -2,9 +2,7 @@
 
 An Ubuntu Docker image automatically selecting the fastest apt mirror servers.
 
----
-
-**Tags**
+## Tags
 
 * `bionic`, `latest`: [bionic/Dockerfile](bionic/Dockerfile)
 * `xenial`: [xenial/Dockerfile](xenial/Dockerfile)
