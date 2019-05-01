@@ -10,4 +10,4 @@ docker run -it --rm -v "$(pwd):/usr/src/app" jmlntw/github-backup [options] USER
 
 ## References
 
-* <https://github.com/josegonzalez/python-github-backup>
+* https://github.com/josegonzalez/python-github-backup

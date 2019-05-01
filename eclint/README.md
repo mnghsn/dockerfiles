@@ -10,5 +10,5 @@ docker run --rm -v "$(pwd):/usr/src/app" jmlntw/eclint <commands> [files...] [op
 
 ## References
 
-* <https://github.com/jedmao/eclint>
-* <https://editorconfig.org/>
+* https://github.com/jedmao/eclint
+* https://editorconfig.org/
