@@ -1,7 +1,8 @@
 language: generic
-sudo: required
+
 services:
   - docker
+
 script:
   - docker build -t jmlntw/ubuntu-mirror:xenial ubuntu-mirror/xenial/.
   - docker build -t jmlntw/ubuntu-mirror:bionic ubuntu-mirror/bionic/.
@@ -11,6 +12,7 @@ script:
   - docker build -t jmlntw/clasp:latest clasp/.
   - docker build -t jmlntw/github-backup:latest github-backup/.
   - docker build -t jmlntw/gitlab-backup:latest gitlab-backup/.
+
 notifications:
   email:
     on_success: never
