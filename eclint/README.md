@@ -1,6 +1,6 @@
 # ECLint Docker Image
 
-A Docker image to run [**ECLint**](https://github.com/jedmao/eclint), an [editorconfig](https://editorconfig.org/) linter.
+A Docker image to run [**ECLint**](https://github.com/jedmao/eclint), an [EditorConfig](https://editorconfig.org/) linter.
 
 ## Usage
 
