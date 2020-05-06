@@ -6,8 +6,10 @@ services:
 script:
   - docker build -t jmlntw/ubuntu-mirror:xenial ubuntu-mirror/xenial/.
   - docker build -t jmlntw/ubuntu-mirror:bionic ubuntu-mirror/bionic/.
+  - docker build -t jmlntw/ubuntu-mirror:focal ubuntu-mirror/focal/.
   - docker build -t jmlntw/ubuntu-taiwanize:xenial ubuntu-taiwanize/xenial/.
   - docker build -t jmlntw/ubuntu-taiwanize:bionic ubuntu-taiwanize/bionic/.
+  - docker build -t jmlntw/ubuntu-taiwanize:focal ubuntu-taiwanize/focal/.
   - docker build -t jmlntw/eclint:latest eclint/.
   - docker build -t jmlntw/clasp:latest clasp/.
   - docker build -t jmlntw/github-backup:latest github-backup/.
