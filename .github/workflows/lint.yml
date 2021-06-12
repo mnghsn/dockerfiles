@@ -1,0 +1,37 @@
+---
+name: Lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint code base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Run GitHub Super Linter
+        uses: github/super-linter@v4
+        with:
+          # Parse only new or edited files for validation.
+          VALIDATE_ALL_CODEBASE: false
+          # Disable JSCPD due to github/super-linter#1400.
+          VALIDATE_JSCPD: false
+          # Set the linter configuration files.
+          DOCKERFILE_HADOLINT_FILE_NAME: hadolint.yml
+          MARKDOWN_CONFIG_FILE: markdownlint.yml
+          # Set the default branch name.
+          DEFAULT_BRANCH: main
+          # Make Super Linter mark the status of each individual linter run in
+          # the Checks section of a pull request. There is no need to set the
+          # GitHub Secret as it is automatically set by GitHub, it only needs to
+          # be passed to the action.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
