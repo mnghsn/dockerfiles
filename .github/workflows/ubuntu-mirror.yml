@@ -31,6 +31,7 @@ jobs:
             tags:
               - jmlntw/ubuntu-mirror:focal
               - jmlntw/ubuntu-mirror:20.04
+              - jmlntw/ubuntu-mirror:latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
