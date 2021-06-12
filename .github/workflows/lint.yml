@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
       - name: Run GitHub Super Linter
         uses: github/super-linter@v4
-        with:
+        env:
           # Parse only new or edited files for validation.
           VALIDATE_ALL_CODEBASE: false
           # Disable JSCPD due to github/super-linter#1400.
