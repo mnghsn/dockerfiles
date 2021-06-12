@@ -1,8 +1,10 @@
 FROM ubuntu:focal
 
 RUN apt-get update \
-  && apt-get upgrade -y \
-  && apt-get install -y language-pack-zh-hant-base language-pack-zh-hant tzdata \
+  && apt-get install -y --no-install-recommends \
+    language-pack-zh-hant-base \
+    language-pack-zh-hant \
+    tzdata \
   && apt-get autoremove \
   && apt-get autoclean \
   && apt-get clean \
