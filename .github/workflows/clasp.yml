@@ -1,0 +1,37 @@
+---
+name: "image: clasp"
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - clasp/**
+  schedule:
+    # At 11:00 on day-of-month 10.
+    - cron: '0 11 10 * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: clasp
+          platforms: linux/amd64,linux/arm,linux/arm64
+          push: true
+          tags: jmlntw/clasp:latest
