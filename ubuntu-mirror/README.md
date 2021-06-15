@@ -4,6 +4,6 @@ An Ubuntu Docker image automatically selecting the fastest apt mirror servers.
 
 ## Tags
 
-- `focal`, `latest`: [focal/Dockerfile](focal/Dockerfile)
-- `bionic`: [bionic/Dockerfile](bionic/Dockerfile)
-- `xenial`: [xenial/Dockerfile](xenial/Dockerfile)
+- `20.04`, `focal`, `latest`: [focal/Dockerfile](focal/Dockerfile)
+- `18.04`, `bionic`: [bionic/Dockerfile](bionic/Dockerfile)
+- `16.04`, `xenial`: [xenial/Dockerfile](xenial/Dockerfile)
