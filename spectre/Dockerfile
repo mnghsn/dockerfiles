@@ -29,6 +29,4 @@ RUN apt-get update \
   && rm -rf /var/cache/apt/* \
   && rm -rf /var/log/*
 COPY --from=builder /cli/spectre /usr/local/bin/
-RUN mkdir -p /tmp/spectre
-WORKDIR /tmp/spectre
 ENTRYPOINT ["spectre"]
