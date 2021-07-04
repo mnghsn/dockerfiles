@@ -5,7 +5,7 @@ A Docker image to run [Spectre](https://spectre.app) CLI, a determenistic passwo
 ## Usage
 
 ```bash
-$ docker run --rm jmlntw/spectre:latest [OPTIONS]
+docker run --rm jmlntw/spectre:latest [OPTIONS]
 ```
 
 ## References
