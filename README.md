@@ -12,6 +12,8 @@ A collection of my Dockerfiles.
 - [jmlntw/**gitlab-backup**](https://hub.docker.com/r/jmlntw/gitlab-backup/)
 - [jmlntw/**bat**](https://hub.docker.com/r/jmlntw/bat)
 - [jmlntw/**compare-userjs**](https://hub.docker.com/r/jmlntw/compare-userjs)
+- [jmlntw/**spectre**](https://hub.docker.com/r/jmlntw/spectre)
+- [jmlntw/**lesspass**](https://hub.docker.com/r/jmlntw/lesspass)
 
 ## License
 
