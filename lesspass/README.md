@@ -5,11 +5,7 @@ A Docker Image to run [LessPass](https://www.lesspass.com/) CLI.
 ## Usage
 
 ```bash
-$ docker run \
-  --rm \
-  --voulme "$(pwd):/tmp/lesspass" \
-  jmlntw/lesspass:latest \
-  SITE [LOGIN] [MASTER_PASSWORD] [OPTIONS]
+$ docker run --rm jmlntw/lesspass:latest [OPTIONS]
 ```
 
 ## References
