@@ -1,4 +1,9 @@
-FROM ubuntu:bionic
+ARG BASE_IMAGE_NAME=ubuntu
+ARG BASE_IMAGE_TAG=focal
+
+FROM ${BASE_IMAGE_NAME}:${BASE_IMAGE_TAG}
+ARG BASE_IMAGE_NAME
+ARG BASE_IMAGE_TAG
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -17,4 +22,3 @@ RUN apt-get update \
 
 ENV LANG zh_TW.UTF-8
 ENV LC_ALL zh_TW.UTF-8
-ENV LC_CTYPE zh_TW.UTF-8
