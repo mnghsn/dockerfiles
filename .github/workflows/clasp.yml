@@ -4,7 +4,7 @@ name: jmlntw/clasp
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - clasp/**
   schedule:

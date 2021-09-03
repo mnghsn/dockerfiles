@@ -4,10 +4,10 @@ name: Lint
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   lint:
@@ -31,7 +31,7 @@ jobs:
           DOCKERFILE_HADOLINT_FILE_NAME: hadolint.yml
           MARKDOWN_CONFIG_FILE: markdownlint.yml
           # Set the default branch name.
-          DEFAULT_BRANCH: main
+          DEFAULT_BRANCH: master
           # Make Super Linter mark the status of each individual linter run in
           # the Checks section of a pull request. There is no need to set the
           # GitHub Secret as it is automatically set by GitHub, it only needs to

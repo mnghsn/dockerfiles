@@ -4,7 +4,7 @@ name: jmlntw/eclint
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - eclint/**
   schedule:

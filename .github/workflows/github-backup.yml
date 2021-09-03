@@ -4,7 +4,7 @@ name: jmlntw/github-backup
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - github-backup/**
   schedule:

@@ -4,7 +4,7 @@ name: jmlntw/lesspass
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - lesspass/**
   schedule:
