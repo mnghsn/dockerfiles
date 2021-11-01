@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/powershell:alpine-3.12
+FROM mcr.microsoft.com/powershell:alpine-3.13
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN apk update \
