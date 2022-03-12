@@ -1,6 +1,6 @@
 # bat Docker Image
 
-A Docker image to run [**bat**](https://github.com/sharkdp/bat), a cat(1) clone with wings.
+A Docker image to run [**bat**](https://github.com/sharkdp/bat), a `cat(1)` clone with wings.
 
 ## Usage
 
