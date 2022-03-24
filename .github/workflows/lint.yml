@@ -25,8 +25,6 @@ jobs:
         env:
           # Parse only new or edited files for validation.
           VALIDATE_ALL_CODEBASE: false
-          # Disable JSCPD due to github/super-linter#1400.
-          VALIDATE_JSCPD: false
           # Set the linter configuration files.
           DOCKERFILE_HADOLINT_FILE_NAME: hadolint.yml
           MARKDOWN_CONFIG_FILE: markdownlint.yml
