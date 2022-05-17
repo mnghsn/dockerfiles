@@ -47,6 +47,15 @@ jobs:
             tags: |
               jmlntw/ubuntu-mirror:20.04
               jmlntw/ubuntu-mirror:focal
+          - build_args: |
+              BASE_IMAGE_TAG=jammy
+            platforms: |
+              linux/amd64
+              linux/arm
+              linux/arm64
+            tags: |
+              jmlntw/ubuntu-mirror:22.04
+              jmlntw/ubuntu-mirror:jammy
               jmlntw/ubuntu-mirror:latest
     steps:
       - name: Checkout repository

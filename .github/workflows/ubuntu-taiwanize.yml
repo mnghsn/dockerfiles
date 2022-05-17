@@ -47,6 +47,15 @@ jobs:
             tags: |
               jmlntw/ubuntu-taiwanize:20.04
               jmlntw/ubuntu-taiwanize:focal
+          - build_args: |
+              BASE_IMAGE_TAG=jammy
+            platforms: |
+              linux/amd64
+              linux/arm
+              linux/arm64
+            tags: |
+              jmlntw/ubuntu-taiwanize:22.04
+              jmlntw/ubuntu-taiwanize:jammy
               jmlntw/ubuntu-taiwanize:latest
     steps:
       - name: Checkout repository
