@@ -21,7 +21,7 @@ jobs:
           # within Super Linter.
           fetch-depth: 0
       - name: Run GitHub Super Linter
-        uses: github/super-linter/slim@v4
+        uses: github/super-linter/slim@v5
         env:
           # Parse only new or edited files for validation.
           VALIDATE_ALL_CODEBASE: false
