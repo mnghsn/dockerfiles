@@ -4,9 +4,11 @@ name: Lint
 on:
   push:
     branches:
+      - main
       - master
   pull_request:
     branches:
+      - main
       - master
 
 jobs:
@@ -25,7 +27,7 @@ jobs:
           # within Super Linter.
           fetch-depth: 0
       - name: Run GitHub Super Linter
-        uses: github/super-linter/slim@v5
+        uses: super-linter/super-linter/slim@v5
         env:
           # Parse only new or edited files for validation.
           VALIDATE_ALL_CODEBASE: false
