@@ -6,7 +6,6 @@ A collection of my Dockerfiles.
 
 - [jmlntw/**ubuntu-mirror**](ubuntu-mirror/README.md)
 - [jmlntw/**ubuntu-taiwanize**](ubuntu-taiwanize/README.md)
-- [jmlntw/**eclint**](eclint/README.md)
 - [jmlntw/**clasp**](clasp/README.md)
 - [jmlntw/**github-backup**](github-backup//README.md)
 - [jmlntw/**gitlab-backup**](gitlab-backup//README.md)
