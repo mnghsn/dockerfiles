@@ -17,32 +17,14 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - build_args: |
-              BASE_IMAGE_TAG=xenial
-            platforms: |
-              linux/386
-              linux/amd64
-              linux/arm
-              linux/arm64
-          - build_args: |
-              BASE_IMAGE_TAG=bionic
-            platforms: |
-              linux/386
-              linux/amd64
-              linux/arm
-              linux/arm64
-          - build_args: |
-              BASE_IMAGE_TAG=focal
-            platforms: |
-              linux/amd64
-              linux/arm
-              linux/arm64
-          - build_args: |
-              BASE_IMAGE_TAG=jammy
-            platforms: |
-              linux/amd64
-              linux/arm
-              linux/arm64
+          - build_args: BASE_IMAGE_TAG=xenial
+            platforms: linux/386,linux/amd64,linux/arm,linux/arm64
+          - build_args: BASE_IMAGE_TAG=bionic
+            platforms: linux/386,linux/amd64,linux/arm,linux/arm64
+          - build_args: BASE_IMAGE_TAG=focal
+            platforms: linux/amd64,linux/arm,linux/arm64
+          - build_args: BASE_IMAGE_TAG=jammy
+            platforms: linux/amd64,linux/arm,linux/arm64
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
