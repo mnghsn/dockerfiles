@@ -1,5 +1,5 @@
 ---
-name: jmlntw/github-backup
+name: github-backup
 
 on:
   push:

@@ -1,5 +1,5 @@
 ---
-name: jmlntw/ubuntu-taiwanize
+name: ubuntu-taiwanize
 
 on:
   push:

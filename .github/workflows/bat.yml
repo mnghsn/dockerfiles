@@ -1,5 +1,5 @@
 ---
-name: jmlntw/bat
+name: bat
 
 on:
   push:

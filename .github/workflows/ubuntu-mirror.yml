@@ -1,5 +1,5 @@
 ---
-name: jmlntw/ubuntu-mirror
+name: ubuntu-mirror
 
 on:
   push:

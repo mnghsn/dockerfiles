@@ -1,5 +1,5 @@
 ---
-name: jmlntw/clasp
+name: clasp
 
 on:
   push:

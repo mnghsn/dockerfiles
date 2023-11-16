@@ -1,5 +1,5 @@
 ---
-name: jmlntw/compare-userjs
+name: compare-userjs
 
 on:
   push:
