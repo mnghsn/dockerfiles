@@ -7,8 +7,7 @@ on:
       - master
     paths:
       - lesspass/**
-  schedule:
-    - cron: 12 5 19 * *
+  workflow_dispatch:
 
 jobs:
   docker:

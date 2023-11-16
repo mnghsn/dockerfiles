@@ -7,8 +7,7 @@ on:
       - master
     paths:
       - bat/**
-  schedule:
-    - cron: 2 1 20 * *
+  workflow_dispatch:
 
 jobs:
   docker:

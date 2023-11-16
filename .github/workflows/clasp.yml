@@ -7,8 +7,7 @@ on:
       - master
     paths:
       - clasp/**
-  schedule:
-    - cron: 3 12 1 * *
+  workflow_dispatch:
 
 jobs:
   docker:

@@ -7,8 +7,7 @@ on:
       - master
     paths:
       - gitlab-backup/**
-  schedule:
-    - cron: 7 9 20 * *
+  workflow_dispatch:
 
 jobs:
   docker:
