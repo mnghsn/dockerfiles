@@ -1,10 +1,21 @@
-FROM node:alpine
+FROM node:18-alpine3.19
 
-RUN npm install -g @google/clasp
+# Create a non-root user.
+RUN set -eux; \
+  addgroup user; \
+  adduser -G user -s /bin/sh -D user
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-VOLUME /usr/src/app
+# Install Node package and script.
+ENV ENTRYPOINT clasp
+USER user
+WORKDIR /home/user/clasp
+COPY --chown=user:user entrypoint.sh .
+COPY --chown=user:user package.json .
+RUN set -eux; \
+  npm install; \
+  npm cache clean --force
 
-ENTRYPOINT ["clasp"]
-CMD ["--help"]
+# Configure runtime environment.
+WORKDIR /app
+ENV PATH "/home/user/clasp/node_modules/.bin:${PATH}"
+ENTRYPOINT ["/home/user/clasp/entrypoint.sh"]
