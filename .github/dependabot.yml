@@ -6,3 +6,16 @@ updates:
     directory: /
     schedule:
       interval: weekly
+
+  # clasp
+  - package-ecosystem: docker
+    directory: /clasp
+    ignore:
+      - dependency-name: node
+        versions: [19, 21, 23, 25]
+    schedule:
+      interval: weekly
+  - package-ecosystem: npm
+    directory: /clasp
+    schedule:
+      interval: weekly
