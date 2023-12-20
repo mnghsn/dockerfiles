@@ -19,3 +19,42 @@ updates:
     directory: "/clasp"
     schedule:
       interval: "weekly"
+
+  # github-backup
+  - package-ecosystem: "docker"
+    directory: "/github-backup"
+    ignore:
+      - dependency-name: "python"
+        update-types: ["version-update:semver-patch"]
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/github-backup"
+    schedule:
+      interval: "weekly"
+
+  # gitlab-backup
+  - package-ecosystem: "docker"
+    directory: "/gitlab-backup"
+    ignore:
+      - dependency-name: "python"
+        update-types: ["version-update:semver-patch"]
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/gitlab-backup"
+    schedule:
+      interval: "weekly"
+
+  # lesspass
+  - package-ecosystem: "docker"
+    directory: "/lesspass"
+    ignore:
+      - dependency-name: "python"
+        update-types: ["version-update:semver-patch"]
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/lesspass"
+    schedule:
+      interval: "weekly"
