@@ -19,7 +19,7 @@ RUN set -eux; \
   pip install --no-cache-dir --user -r requirements.txt
 
 # Configure runtime environment.
-WORKDIR /app
+WORKDIR /mnt
 ENV PATH "/home/user/.local/bin:${PATH}"
 ENV PYTHONPATH="/home/user/.local/lib/python3.12/site-packages"
 ENTRYPOINT ["/home/user/github-backup/entrypoint.sh"]
