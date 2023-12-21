@@ -1,0 +1,43 @@
+---
+name: Lint
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      validate_all_codebase:
+        type: choice
+        required: true
+        description: The flag to parse the entire repository.
+        default: "false"
+        options:
+          - "true"
+          - "false"
+
+permissions:
+  contents: read
+  packages: read
+  statuses: write
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run Super-Linter
+        uses: super-linter/super-linter/slim@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: >-
+            ${{
+              ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.validate_all_codebase == 'true' }}
+              || false
+            }}
+          DOCKERFILE_HADOLINT_FILE_NAME: hadolint.yml
+          MARKDOWN_CONFIG_FILE: markdownlint.yml
