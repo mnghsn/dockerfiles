@@ -13,7 +13,8 @@ RUN set -eux; \
     jq
 RUN set -eux; \
   git clone --recursive "https://gitlab.com/spectre.app/cli.git" /cli; \
-  cd /cli; \
+WORKDIR /cli
+RUN set -eux; \
   ./build; \
   ./spectre-cli-tests
 
