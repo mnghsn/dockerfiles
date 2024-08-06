@@ -19,14 +19,15 @@ on:
           - "true"
           - "false"
 
-permissions:
-  contents: read
-  packages: read
-  statuses: write
+permissions: { }
 
 jobs:
   lint:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
