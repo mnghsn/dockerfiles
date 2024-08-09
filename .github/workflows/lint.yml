@@ -19,7 +19,7 @@ on:
           - "true"
           - "false"
 
-permissions: { }
+permissions: {}
 
 jobs:
   lint:
